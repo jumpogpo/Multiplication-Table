@@ -7,10 +7,10 @@ process.stdout.write(
 );
 
 function StartProgram() {
-    const Number = prompt('Please Enter the number: ');
+    const InputNumber = prompt('Please Enter the number: ');
 
     for (let i = 1; i <= 12; i++) {
-        console.log(Number, 'x', i, '=', Number * i)
+        console.log(`${InputNumber} x ${String(i)} =`, InputNumber * i)
     }
 
     console.log()
