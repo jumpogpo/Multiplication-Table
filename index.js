@@ -7,10 +7,14 @@ process.stdout.write(
 );
 
 function StartProgram() {
-    const InputNumber = prompt('Please Enter the number: ');
+    const InputNumber = prompt('Please enter the number: ');
 
-    for (let i = 1; i <= 12; i++) {
-        console.log(`${InputNumber} x ${String(i)} =`, InputNumber * i)
+    if (!isNaN(InputNumber)) {
+        for (let i = 1; i <= 12; i++) {
+            console.log(`${InputNumber} x ${String(i)} =`, InputNumber * i)
+        }
+    }else {
+        console.log('Please enter the number not letter!!')
     }
 
     console.log()
